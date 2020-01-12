@@ -1,0 +1,168 @@
+\documentclass{article}
+
+\usepackage[head=1in, foot=1in, left=1in, right=1in]{geometry}
+\usepackage{fancyhdr, parcolumns, fontawesome, lipsum}
+\newcommand{\heading}[1]{\colchunk[1]{\hspace*{-\parindent}\textbf{#1}}}
+\newcommand{\coltwo}[1]{\colchunk[2]{#1}\colplacechunks}
+\newcommand{\colthree}[1]{\colchunk[3]{#1}\colplacechunks}
+\pagestyle{fancy}
+\chead{\textbf{Nathan Bockisch}}
+\pagenumbering{gobble}
+
+\begin{document}
+
+% Contact Section
+\setlength{\parindent}{0pt}
+\begin{parcolumns}[distance=0.5cm, colwidths = {1=3cm}, sloppy, nofirstindent]{3}
+
+    \colchunk[1]{\hspace*{-\parindent}\textbf{Contact}}
+    
+    \colchunk[2]{1033 Mesa Cruzada \\
+        Los Lunas, NM \\
+        87031
+    }
+
+    \colchunk[3]{\faPhone \quad (505) 359-1563 \\ 
+        \faEnvelope \quad nbockisch@protonmail.com \\
+        \faLinkedin \quad www.linkedin.com/in/nbockisch \\ 
+        \faGithub \quad nbockisch
+    }
+    \colplacechunks
+
+\end{parcolumns}
+
+\addvspace{0.5cm}
+
+% Education Section
+\setlength{\parindent}{0pt}
+\begin{parcolumns}[distance=0.5cm, colwidths = {1=3cm}, sloppy, nofirstindent]{2}
+
+    \colchunk[1]{\hspace*{-\parindent}\textbf{Education}}
+    \colchunk[2]{\textbf{August 2016 - May 2020} \\
+    \textbf{B.Sc. in Computer Science} \hfill \textit{New Mexico Institute of Mining and Technology} \\
+    - 3.39 GPA \\
+    Completing a curriculum with a focus in computer science theory. Covered topics such as software engineering methodology, computer architecture, algorithms, data structures, and cryptography.
+    }
+    \colplacechunks
+
+    \addvspace{0.2cm}
+
+    \colchunk[2]{\textbf{August 2014 - May 2016} \\
+    \textbf{Transfer Student} \hfill \textit{University of New Mexico Valencia Campus} \\
+    - 3.86 GPA \\
+    Finished highschool education as a dual-credit student. Completed courses in chemistry, calculus, biology, geology, and humanities.
+    }
+    \colplacechunks
+
+\end{parcolumns}
+
+\addvspace{0.5cm}
+
+% Work Experience Section
+\setlength{\parindent}{0pt}
+\begin{parcolumns}[distance=0.5cm, colwidths = {1=3cm}, sloppy, nofirstindent]{2}
+    
+    \colchunk[1]{\hspace*{-\parindent}\textbf{Work Experience}}
+    \colchunk[2]{\textbf{July 2019 - Present} \\
+    \textbf{Research Assistant} \hfill \textit{Department of Civil and Environmental Engineering}\\
+    Worked with the New Mexico Department of Transportation to develop a new website for the Research Bureau. Designed a survey to collect data from Research Bureaus in other states to integrate into the website development process. Worked with the client's requirements to develop two prototype websites, and learned the Bootstrap web development toolkit within a day during this process.
+    }
+    \colplacechunks
+
+    \addvspace{0.2cm}
+
+    \colchunk[2]{\textbf{May 2018 - Present} \\
+    \textbf{System Administrator} \hfill \textit{Department of Computer Science and Engineering}\\
+    Worked in a team environment to maintain and develop the web and hardware infrastructure for the department. Assisted with the development of a FreeIPA authentication system for the department, and used Python and the Django framework to build a website for account creation. Utilized the Ansible deployment software to automate large-scale infrastructure updates and configuration. Worked extensively with Linux systems.
+    }
+    \colplacechunks
+
+    \addvspace{0.2cm}
+
+    \colchunk[2]{\textbf{January 2019 - May 2019, January 2020 - Present} \\
+    \textbf{Teaching Assistant} \hfill \textit{Department of Computer Science and Engineering}\\
+    Designed and implemented labs for an object oriented programming course. Worked closely with the professor of the course to cover the object oriented programming concepts discussed in the lectures in the homework assignments. Developed software prototypes for the assignments using the Java programming language. Answered student questions regarding Java and the object oriented programming paradigm.
+    }
+    \colplacechunks
+        
+    \addvspace{0.2cm}
+
+    \colchunk[2]{\textbf{August 2015 - May 2016} \\
+    \textbf{Advanced Tutor} \hfill \textit{University of New Mexico Valencia Campus STEM Center}\\
+    Assisted students with assignments and conceptual questions. Assisted professor in with student questions during class period. Received two promotions.
+    }
+    \colplacechunks
+
+    \addvspace{0.2cm}
+
+    \colchunk[2]{\textbf{Summer 2014, Summer 2015} \\
+    \textbf{Team Member} \hfill \textit{Kentucky Fried Chicken, Los Lunas, NM}\\
+    Interacted with customer requests as a cashier. Cleaned the lobby and cooking equipment.
+    }
+    \colplacechunks
+
+\end{parcolumns}
+
+\addvspace{0.5cm}
+
+% Technology Summary Section
+\setlength{\parindent}{0pt}
+\begin{parcolumns}[distance=0.5cm, colwidths = {1=3cm}, sloppy, nofirstindent]{2}
+    
+    \colchunk[1]{\hspace*{-\parindent}\textbf{Technical Skills}}
+    \colchunk[2]{\textit{Languages} - C, Python, Java, JavaScript, Bash, HTML, CSS, \LaTeX \\ \\
+    \textit{Design and IDE Tools} - Eclipse, PyCharm, Atom, Vim, Notepad++, AndroidStudio, NetBeans, IntelliJ IDEA \\ \\
+    \textit{Software and Frameworks} - Git, Ansible, Django, Bootstrap \\ \\
+    \textit{Operating Systems} - Linux and Unix Systems, Windows
+    }
+
+\end{parcolumns}
+
+\addvspace{0.5cm}
+
+% Extracurricular Activity Section
+\begin{parcolumns}[distance=0.5cm, colwidths = {1=3cm}, sloppy, nofirstindent]{2}
+
+    \colchunk[1]{\hspace*{-\parindent}\textbf{Extracurricular Activities}}
+    \colchunk[2]{\begin{itemize}
+    \item \textbf{Ludum Dare Game Jam (December 2014, April 2015, April 2016, August 2016)} - Participant     
+    \item \textbf{Explora Science Center (Summer 2013)} - Volunteer
+    \item \textbf{NeuroGame Jam (2014)} - Winner of the Best Student Team Award
+    \item \textbf{Mid Rio Grand Homeschool Band (2009 - 2014)} - Percussion player, awarded I-Superior by the New Mexico Music Educator's Association 
+    \item \textbf{AFRL La Luz Academy (2010)} - Completed a course in robotics with the BASIC programming language
+    \item \textbf{New Mexico Science and Engineering Research Expo (2009, 2010)} - Winner of several awards, including first place in the state level competition, first place ENLACE award, second place Explora Museum award, the U.S. Stockholm Junior Water Prize Regional Award, and a \$400 award from the Rocky Mountain Water Environment Association
+    \end{itemize}}
+    \colplacechunks
+
+\end{parcolumns}
+
+\addvspace{0.5cm}
+
+% Languages Section
+\begin{parcolumns}[distance=0.5cm, colwidths = {1=3cm}, sloppy, nofirstindent]{2}
+
+    \colchunk[1]{\hspace*{-\parindent}\textbf{Languages}}
+    \colchunk[2]{\begin{itemize}
+    \item \textbf{English} - Native speaker
+    \item \textbf{Spanish} - Fluent    
+    \item \textbf{Mandarin Chinese} - Basic knowledge, actively studying
+    \end{itemize}}
+    \colplacechunks
+
+\end{parcolumns}
+
+\addvspace{0.5cm}
+
+%\begin{parcolumns}[
+%    distance=0.5cm,
+%    nofirstindent,
+%    colwidths = {1=3cm},
+%    sloppy]{2}
+
+%\heading{Education}
+%\coltwo{\lipsum[1-2]}
+%\addvspace{0.5cm}
+%\heading{Employment History}
+%\coltwo{\lipsum[1-2]}
+%\end{parcolumns}
+\end{document}
